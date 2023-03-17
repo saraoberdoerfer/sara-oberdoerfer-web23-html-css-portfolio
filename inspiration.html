@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="portfolio.css" />
+        <title>Inspirationssida</title>
+    </head>
+    <body>
+       <!--hamburgarstrecken-->
+       <input type="checkbox" id="toggle">
+       <nav>
+          <a class="navbar-brand" href="#">
+              Portfolio
+          </a>
+          <label class="navbar-toggler" for="toggle">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </label>
+<!--navbar med länkar-->
+          <ul class="nav-list">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Startsida</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="projekt1.html">Projekt 1</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="projekt2.html">Projekt 2</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="projekt3.html">Projekt 3</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="projekt4.html">Projekt 4</a>
+              </li>
+          </ul>
+      </nav>
+
+        <div class="container">
+            <h3 id="rubrik">Sara Marie Levin Oberdoerfer</h3> <br>
+            <p id="text">
+                Hej jag heter Sara och är en 23 årig kvinna. Jag är född och
+                uppvuxen i Malmö men bor just nu i Lund. <br />
+                Mina studier gör jag på Grit Academy som webbutvecklare och jag
+                jobbar även vid sidan av som personlig tränare <br />
+                på Nordic Wellness. På fritiden så styrketränar jag, hänger med
+                vänner och ett stort intresse jag har är även smink och kläder.
+            </p> <br>
+            <!--en picture tag så olika bilder beroende på storlek på skärm-->
+            <picture>
+                <source
+                    media="(min-width:650px)"
+                    srcset="bildmellan.png"
+                />
+                <source
+                    media="(min-width:465px)"
+                    srcset="bildliten.png"
+                />
+                <img
+                    src="bildstor.png"
+                    alt="Bild"
+                    style="width: auto"
+                />
+            </picture>
+        </div>
+
+        <footer>
+            <div id="kontakter">
+                <h3>Saras kontakter</h3>
+                <!--nu man kan trycka på telefonnummret för att ringa upp-->
+                Telefon:
+                <a href="tel:072-2494233">072-2494233</a>
+                <!--nu man kan trycka på mejlen för att mejl ska komma upp-->
+                Email:
+                <a href="mailto:sara.oberdoerfer@gritacademy.se"
+                    >sara.oberdoerfer@gritacademy.se</a
+                >
+                <!--länka in en logga som är instagram-->
+                <a
+                    href="https://www.instagram.com/saraoberdoerfer"
+                    target="_blank"
+                >
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a
+                    href="https://www.facebook.com/sara.oberdoerfer"
+                    target="_blank"
+                >
+                    <!--länka in en logga som är facebook-->
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <!--När man klickar på dessa loggor kommer man till den sidan-->
+                <script
+                    type="module"
+                    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+                ></script>
+                <script
+                    nomodule
+                    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+                ></script>
+            </div>
+        </footer>
+    </body>
+</html>

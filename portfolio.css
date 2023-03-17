@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+}
+/*mina variabelfärger*/
+:root {
+    --my-color: rgba(33, 196, 65, 0.2);
+    --my-color2: rgb(11, 99, 28);
+    --my-colordark: rgba(4, 23, 17, 0.2);
+    --my-colordark2: rgb(254, 252, 233);
+    --margin-top: 3%;
+}
+/*Gör bakgrundsfärgen ljusblå, lägg till animation som ändrar bakgrundsfärg*/
+body {
+    background-color: var(--my-color);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+nav {
+    background-color: var(--my-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15%;
+    height: 75px;
+    line-height: 75px;
+}
+
+nav .navbar-brand {
+    color: var(--my-color2);
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+nav .nav-list {
+    display: flex;
+}
+
+nav .nav-list .nav-item {
+    cursor: pointer;
+    height: 100;
+    padding: 0 30px;
+    transition: 0.4s;
+}
+
+nav .nav-list .nav-item:hover {
+    background-color: rgb(49, 206, 112, 0.2);
+}
+
+nav .nav-list .nav-link {
+    color: var(--my-color2);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media screen and (max-widht: 935px) {
+    nav {
+        padding: 0 2rem;
+    }
+    nav .nav-list .nav-item {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    nav .nav-list {
+        display: grid;
+        position: absolute;
+        background: var(--my-color);
+        width: 100%;
+        top: 75px;
+        left: 0;
+        transform: translateY(-100%);
+        z-index: -1;
+        transition: 0.6s;
+    }
+    nav nav.list .nav-item {
+        padding-left: 35px;
+    }
+    nav .navbar-toggler {
+        display: grid !important;
+    }
+}
+
+nav .navbar-toggler {
+    display: none;
+    height: min-content;
+    margin: 18px -10px 0 0;
+    cursor: pointer;
+}
+
+nav .navbar-toggler .bar {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background: var(--my-color2);
+    border-radius: 10%;
+    transition: 0.4s;
+}
+
+input {
+    display: none;
+}
+
+input:checked ~ nav .nav-list {
+    transform: translateY(0);
+}
+
+input:checked ~ nav .navbar-toggler {
+    margin-top: 35px;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
+    display: none;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+/*Rubriken ska ha variabelfärg och i mitten*/
+#projektrub {
+    color: var(--my-color2);
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+/*gjort länkarna i en blå färg.*/
+a {
+    color: var(--my-color2);
+    font-size: larger;
+}
+/*tar bort streck under text*/
+a:link {
+    text-decoration: none;
+}
+/*Section ska vara flexbox och vara i en rad alltså horisontellt.*/
+.flexprojekt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: var(--my-color2);
+    margin-top: var(--margin-top)
+}
+/*Text ska vara times new roman*/
+h3 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+#kontakter {
+    text-align: center;
+    color: var(--my-color2);
+    margin-top: var(--margin-top);
+}
+/*ändra bakgrundsfärg gradvis fram och tillbaka*/
+@keyframes example {
+    0% {
+        background-color: var(--my-color);
+    }
+    50% {
+        background-color: rgba(48, 191, 143, 0.4);
+    }
+    75% {
+        background-color: rgba(48, 191, 143, 0.5);
+    }
+    100% {
+        background-color: rgba(48, 191, 143, 0.6);
+    }
+}
+/*när man hovrar över en länk blir det en annan färg på texten*/
+a:hover {
+    color: rgb(49, 206, 112);
+}
+/*satt in variabel margin*/
+.container {
+    margin-top: var(--margin-top);
+    text-align: center;
+}
+/*satt in en annan färg på just den rubriken*/
+#rubrik {
+    color: rgb(17, 168, 65);
+    font-size: x-large;
+}
+/*satt in variabel färg*/
+#text {
+    color: var(--my-color2);
+}
+/*satt in flex och gjort den i horisontell riktning med space around och variabel margin*/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: var(--margin-top);
+    justify-content: space-around;
+}
+/*satt in variabel margin, variabel färg, lagt texten i mitten och ändrat font*/
+#projektrub {
+    color: var(--my-color2);
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: var(--margin-top);
+}
+/*satt in flex, horisontellt, space around, och satt extra margin på sidorna*/
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: var(--margin-top);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+/*satt in variabel margin, flex, horisontellt*/
+#flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: var(--margin-top);
+}
+/*satt in variabel margin, extra margin på sidorna, horisontell flex och space around.*/
+#flexbox2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: var(--margin-top);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+/*när det är mobilvy ska section flexboxen vara i column istället för row*/
+@media screen and (max-width: 480px) {
+    .flexprojekt {
+        flex-direction: column;
+    }
+    #projektrub {
+        text-align: left;
+    }
+    #kontakter {
+        text-align: left;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .flex-container2 {
+        flex-direction: column;
+    }
+    #flexbox {
+        flex-direction: column;
+    }
+    #flexbox2 {
+        flex-direction: column;
+    }
+}
+/*Ändras till andra färger när det är darkmode*/
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--my-colordark);
+    }
+    #projektrub {
+        color: var(--my-colordark2);
+    }
+    a {
+        color: var(--my-colordark2);
+    }
+    p {
+        color: var(--my-colordark2);
+    }
+    #kontakter {
+        color: var(--my-colordark2);
+    }
+    #text {
+        color: var(--my-colordark2);
+    }
+    #rubrik {
+        color: var(--my-colordark2);
+    }
+}

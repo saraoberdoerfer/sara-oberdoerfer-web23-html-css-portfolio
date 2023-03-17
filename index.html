@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Saras portfolio" />
+        <meta name="keywords" content="Sara, portfolio, cv, projekt" />
+        <title>Startsida</title>
+        <link rel="stylesheet" href="portfolio.css" />
+    </head>
+    <body>
+<!--hamburgarstrecken-->
+        <input type="checkbox" id="toggle">
+         <nav>
+            <a class="navbar-brand" href="#">
+                Portfolio
+            </a>
+            <label class="navbar-toggler" for="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+<!--navbar med länkar-->
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="inspiration.html">Inspirationssida</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projekt1.html">Projekt 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projekt2.html">Projekt 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projekt3.html">Projekt 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projekt4.html">Projekt 4</a>
+                </li>
+            </ul>
+        </nav>
+        <!--en header med rubrik där det står Saras portfolio-->
+        <header id="projektrub"><h2>Saras portfolio</h2></header>
+        <!--en flexbox med alla fyra projekt i varsin div (tagg section)-->
+        <section class="flexprojekt">
+            <div>
+                <img src="projekt1.png" alt="Projekt 1" />
+                <p>
+                    Detta är projekt 1. <br />
+                    Det visar mitt cv och mitt personliga brev.
+                </p>
+            </div>
+            <div>
+                <img src="projekt 2.png" alt="Projekt 2" />
+                <p>
+                    Detta är projekt 2. <br />
+                    Det visar mitt första miniprojekt.
+                </p>
+            </div>
+            <div>
+                <img src="projekt3.png" alt="Projekt 3" />
+                <p>
+                    Detta är projekt 3. <br />
+                    Det visar mitt andra miniprojekt.
+                </p>
+            </div>
+            <div>
+                <img src="projekt4.png" alt="Projekt 4" />
+                <p>
+                    Detta är projekt 4. <br />
+                    Det visar min första övning i kursen.
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <div id="kontakter">
+                <h3>Saras kontakter</h3>
+                <!--nu man kan trycka på telefonnummret för att ringa upp-->
+                Telefon:
+                <a href="tel:072-2494233">072-2494233</a>
+                <!--nu man kan trycka på mejlen för att mejl ska komma upp-->
+                Email:
+                <a href="mailto:sara.oberdoerfer@gritacademy.se"
+                    >sara.oberdoerfer@gritacademy.se</a> 
+                <!--länka in en logga som är instagram-->
+                <a
+                    href="https://www.instagram.com/saraoberdoerfer"
+                    target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a
+                    href="https://www.facebook.com/sara.oberdoerfer"
+                    target="_blank">
+                    <!--länka in en logga som är facebook-->
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <!--När man klickar på dessa loggor kommer man till den sidan-->
+                <script
+                    type="module"
+                    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+                ></script>
+                <script
+                    nomodule
+                    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+                ></script>
+            </div>
+        </footer>
+
+        <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    </body>
+</html>

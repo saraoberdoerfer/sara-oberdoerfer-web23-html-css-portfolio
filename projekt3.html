@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="portfolio.css" />
+        <title>Projekt 3</title>
+    </head>
+    <body>
+         <!--navbaren med länkar till dem andra sidorna-->
+        <nav id="meny">
+            <a href="index.html" class="btn btn-success"
+                >Startsida</a
+            >
+            <a href="inspiration.html" class="btn btn-success"
+                >Inspirationssida</a
+            >
+            <a href="projekt1.html" class="btn btn-success"
+                >Projekt 1</a
+            >
+            <a href="projekt2.html" class="btn btn-success"
+                >Projekt 2</a
+            >
+            <a href="projekt4.html" class="btn btn-success"
+                >Projekt 4</a
+            >
+        </nav>
+
+        <header id="projektrub"><h2>Italiensk restaurangs hemsida</h2></header>
+<!--en flexbox men bilder och text-->
+        <div id="flexbox">
+            <div>
+                <img
+                    src="pizzaprojekt3.png"
+                    alt="Hemsida La Trattoria"
+                />
+            </div>
+            <div>
+                <p id="text">
+                    Detta är mitt andra miniprojekt. Jag hittade en restaurang i
+                    Malmö som hade en enkel hemsida. <br />
+                    Restaurangen heter La Trattoria och jag har då gjort om
+                    hemsidans design. På första sidan <br />
+                    står allmän information om restaurangen och öppetiderna.
+                    Längst ner på varje sida står kontaktinfo till restaurangen.
+                    <br />
+                    Det finns även en sida med menyn, där jag har lagt in bilder
+                    på några av dem maträtter restaurangen har. <br />
+                    Bredvid bilderna stå även lite text om varje maträtt. På
+                    kontaktsidan finns ett formulär där du kan boka bord till
+                    restaurangen.
+                </p>
+            </div>
+        </div>
+<!--tre mindre bilder under dem övre stora och texten-->
+        <div id="flexbox2">
+            <div>
+                <img
+                    src="kontaktprojekt3.png"
+                    alt="Formulär kontakt"
+                />
+            </div>
+            <div>
+                <img src="menyprojekt3.png" alt="Meny" />
+            </div>
+            <div>
+                <img src="meny2projekt3.png" alt="Meny" />
+            </div>
+        </div>
+
+        <footer>
+            <div id="kontakter">
+                <h3>Saras kontakter</h3>
+                <!--nu man kan trycka på telefonnummret för att ringa upp-->
+                Telefon:
+                <a href="tel:072-2494233">072-2494233</a>
+                <!--nu man kan trycka på mejlen för att mejl ska komma upp-->
+                Email:
+                <a href="mailto:sara.oberdoerfer@gritacademy.se"
+                    >sara.oberdoerfer@gritacademy.se</a
+                >
+                <!--länka in en logga som är instagram-->
+                <a
+                    href="https://www.instagram.com/saraoberdoerfer"
+                    target="_blank"
+                >
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a
+                    href="https://www.facebook.com/sara.oberdoerfer"
+                    target="_blank"
+                >
+                    <!--länka in en logga som är facebook-->
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <!--När man klickar på dessa loggor kommer man till den sidan-->
+                <script
+                    type="module"
+                    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+                ></script>
+                <script
+                    nomodule
+                    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+                ></script>
+            </div>
+        </footer>
+    </body>
+</html>
